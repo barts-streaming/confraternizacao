@@ -1,85 +1,111 @@
-body{
+body {
     background-color: rgb(5, 82, 82);
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.topo{
+/* ---------- TOPO ---------- */
 
-    
-    width: 70vw ;
-    min-height: 200px;
-    max-height: 500px;
-    margin: 10px 250px;
+.topo {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
     text-align: center;
-    border: solid black 40px;
+    border: solid black 10px;
     color: beige;
-    h1{
-        margin: 80px 0px ;
-        }
+    padding: 30px 10px;
 }
 
-.sobre{
-    width: 70vw ;
+/* ---------- SOBRE ---------- */
+
+.sobre {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
     text-align: center;
-    margin: 10px 250px;
     color: aliceblue;
-    font-size: 22px;
-    line-height: 50px;
-    
-    p{
-        color: rgb(29, 156, 25);
-        padding: 0 400px;
-    }
-
-    span{
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-    }
-
-    img{
-        width: 50vw;
-    }
-
+    font-size: 20px;
+    line-height: 32px;
 }
 
-.imagem{
-    width: 90vw;
-    height: 400px;
-    margin: 0 100px;
-    background-image: url(img/sitio.jpg);
+.sobre p {
+    color: rgb(29, 156, 25);
+    padding: 0 20px;
+}
+
+.sobre span {
+    color: black;
+    font-weight: bold;
+}
+
+/* ---------- IMAGEM ---------- */
+
+.imagem {
+    width: 100%;
+    max-width: 900px;
+    height: 300px;
+    margin: 20px auto;
+    background-image: url("img/sitio.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+    border-radius: 10px;
 }
 
+/* ---------- LISTA ---------- */
 
-
-.participantes{
+.participantes {
     background-color: aliceblue;
-    width: 70vw;
-    max-width: 600px;
-    margin: 10px 600px;
-    font-size: 22px;
-    padding: 30px;
-
-    ol{
-        margin: 0 200px;
-    }
-    
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
+.participantes ol {
+    padding-left: 30px;
+}
 
+/* ---------- MAPA ---------- */
 
+.localizacao {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
 
+.localizacao iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 10px;
+}
 
-.localizacao{
-    width: 70vw;
-   #mapa{
-    
-    width: 70vw;
-    min-height: 200px;
-    max-height: 400px;
-    margin: 10px 250px;
-   } 
+/* ---------- MOBILE RULES ---------- */
+
+@media (max-width: 600px) {
+    .topo {
+        font-size: 18px;
+        padding: 20px;
+        border-width: 6px;
+    }
+
+    .sobre {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .imagem {
+        height: 200px;
+    }
+
+    .participantes {
+        font-size: 18px;
+    }
+
+    .localizacao iframe {
+        height: 250px;
+    }
 }
