@@ -52,6 +52,22 @@ body {
     border-radius: 10px;
 }
 
+/*--------video------------*/
+
+.video{
+    width: 40%;
+    max-width: 300px;
+    margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
 /* ---------- LISTA ---------- */
 
 .participantes {
@@ -73,6 +89,8 @@ body {
     }
     
 }
+
+
 
 .participantes ol {
     padding-left: 10px;
