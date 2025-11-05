@@ -55,8 +55,10 @@ body {
 /*--------video------------*/
 
 .video{
-    margin: 0 auto;
-    width: 50%;
+    position: relative;
+    
+    max-width: 100%;
+    
     
 
 }
